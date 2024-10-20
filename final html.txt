@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Reverse Logistics</title>
+    <link rel="stylesheet" href="f.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reverse Logistics System for Damaged Goods</h1>
+
+        <!-- Tracking Module -->
+        <section>
+            <h2>Goods Tracking</h2>
+            <form id="tracking-form">
+                <label for="trackingID">Enter Tracking ID:</label>
+                <input type="text" id="trackingID" name="trackingID" placeholder="Tracking ID">
+                <button type="button" onclick="trackGoods()">Track</button>
+            </form>
+            <div id="tracking-result"></div>
+        </section>
+
+        <!-- Damage Assessment Module -->
+        <section>
+            <h2>Damage Assessment</h2>
+            <form id="assessment-form">
+                <label for="damageDetails">Damage Description:</label>
+                <textarea id="damageDetails" name="damageDetails" placeholder="Describe the damage"></textarea>
+                <button type="button" onclick="assessDamage()">Submit</button>
+            </form>
+            <div id="assessment-result"></div>
+        </section>
+
+        <!-- Return Authorization Module -->
+        <section>
+            <h2>Return Authorization</h2>
+            <button type="button" onclick="authorizeReturn()">Authorize Return</button>
+            <div id="return-result"></div>
+        </section>
+
+        <!-- Reporting Module -->
+        <section>
+            <h2>Reporting</h2>
+            <button type="button" onclick="generateReport()">Generate Report</button>
+            <div id="report-result"></div>
+        </section>
+    </div>
+
+    <script src="f.js"></script>
+</body>
+</html>
